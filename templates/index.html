@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body id="fixed">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <div class="col text-center">
+          <h1>Mission to Mars</h1>
+          <a href="/scrape" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Get Data!</a>
+        </div>
+      </div>
+      <h2>Latest Mars News</h2>
+      <h3>{{data.ArticleTitle}}</h3>
+      <p>{{data.ArticleBody}}</p>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Featured Mars Image</h2>
+      <img src={{data.FeaturedImage}} height="700px" width="700px">
+    </div>
+
+    <div class="col-md-3">
+      <h3>Mars Weather</h3>
+      <textarea rows="6" cols="50">{{data.MarsWeather}}</textarea>
+    </div>
+
+    <div class="col-md-3">
+      <h3>Mars Facts</h3>
+      <table border="2" class="dataframe" align="right">
+        <thead>
+          <tr style="text-align: center;">
+            <th>Criteria</th>
+            <th>Mars Measurement</th>
+            <th>Earth Measurement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Diameter:</th>
+            <td>6,779 km</td>
+            <td>12,742 km</td>
+          </tr>
+          <tr>
+            <th>Mass:</th>
+            <td>6.39 x 10^23 kg</td>
+            <td>5.97 x 10^24 kg</td>
+          </tr>
+          <tr>
+            <th>Moons:</th>
+            <td>2</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>Distance from Sun:</th>
+            <td>227,943,824 km</td>
+            <td>149,598,262 km</td>
+          </tr>
+          <tr>
+            <th>Length of Year:</th>
+            <td>687 Earth days</td>
+            <td>365.24 days</td>
+          </tr>
+          <tr>
+            <th>Temperature:</th>
+            <td>-153 to 20 °C</td>
+            <td>-88 to 58 °C</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h2 style="text-align: center">Mars Hemispheres</h2>
+  <div class="row">
+    <div class="col-md-6" style="text-align: center">
+      <h3>Cerberus</h3>
+      <img src={{data.CerberusImage}} height="800px" width="800px">
+    </div>
+    <div class="col-md-6" style="text-align: center">
+      <h3>Schiaparelli</h3>
+      <img src={{data.SchiaparelliImage}} height="800px" width="800px">
+    </div>
+  </div>
+  
+    <div class="row">
+      <div class="col-md-6" style="text-align: center">
+        <h3>Syrtis Major</h3>
+        <img src={{data.SyrtisImage}} height="800px" width="800px">
+      </div>
+      <div class="col-md-6" style="text-align: center">
+        <h3>Valles Marineris</h3>
+        <img src={{data.VallesImage}} height="800px" width="800px">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.jumbotron {
+    padding-top: 25px;
+    height: 200px;
+    background: transparent;
+}
+
+textarea {
+    resize: none;
+    color: white;
+    background-color: rgba(125, 221, 238, 0.658);
+}
+
+table {
+    background-color: rgba(125, 221, 238, 0.658);
+}
+
+#fixed {
+    background-image: url("/static/star.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+  }
